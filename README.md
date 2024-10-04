@@ -8,8 +8,9 @@ Steps to run this codebase:
 2. `python c_copy_export.py ` - Scrape https://carboncopy.news/projects and get all the projects featured there in `resources/carboncopy_projects.csv`
 3. `python export_unique.csv` - generates `resources/mixed_data.csv`, which will hold all projects that are featured in https://carboncopy.news/projects and https://positiveblockchain.io/
 4. `python info_export.py` - Scrape all the projects featured in `resources/mixed_data.csv` and generate relevant information in `info/PROJECT_NAME.txt`
-5. `python gen_summary.py` - Uses ChatGPT to generate project summaries using the info from `info/PROJECT_NAME.txt`, the summary being stored in ``sumaries/PROJECT_NAME.txt`
-6. _(Coming soon)_ `python gen_wikis.py` - generates wiki pages for https://impact.miraheze.org/ and archives project websites on WebArchive
+5. _(Optional)_ `python contact_export.py` -  Scrape all the projects featured in `resources/mixed_data.csv` and retrieve contact emails and social links in `resources/contact_info.csv`
+6. `python gen_summary.py` - Uses ChatGPT to generate project summaries using the info from `info/PROJECT_NAME.txt`, the summary being stored in ``sumaries/PROJECT_NAME.txt`
+7. _(Coming soon)_ `python gen_wikis.py` - generates wiki pages for https://impact.miraheze.org/ and archives project websites on WebArchive
 
 In order to run this, you'll need to get also get the projects list from https://positiveblockchain.io/ and save it as `resources/PositiveBlockchain_data.csv`
 
